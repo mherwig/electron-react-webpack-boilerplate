@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>electron-react-webpack</title>
+  </head>
+  <body>
+    <h1>Electron + React + Webpack</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    <br/>
+    <h2>Content:</h2>
+    <div id="content"></div>
+    <script src="assets/js/renderer.bundle.js"></script>
+    <script src="assets/js/app.bundle.js"></script>
+  </body>
+</html>
