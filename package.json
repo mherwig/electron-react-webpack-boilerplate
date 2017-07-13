@@ -7,7 +7,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --progress",
-    "server": "webpack-dev-server",
+    "server": "webpack-dev-server --content-base src/",
     "start": "webpack --progress && electron ./dist",
     "electron": "electron ./dist",
     "start-dev": "concurrently \"webpack-dev-server --content-base src/\" \"wait-on http://localhost:8080/ && cross-env NODE_ENV=development electron ./src\""
